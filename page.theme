@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>
+<?theme title?>
+</title>
+<link rel="stylesheet" type="text/css"
+     href="style.css">
+<body>
+<header>
+<p class="sitenav">Software Needed Coalition</p>
+</header>
+
+<div id="container">
+<div id="sidebar">
+  <!-- edit `the navigation` file to add more links here -->
+  <?theme include(navigation) ?>
+</div>
+
+<div id="main">
+  <!-- edit the .text file and run make to generate HTML from markdown  -->
+<?theme body?>
+</div>
+
+<footer>
+  <p><?theme include(footer)?></p>
+</footer>
+</div><!-- container -->
+</body>
+</html>

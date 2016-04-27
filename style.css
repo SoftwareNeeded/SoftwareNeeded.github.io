@@ -1,0 +1,81 @@
+@import url("normalize.css");
+html, body {
+  margin: 0;
+  color: #000;
+  background-color: #E0B0FF;
+}
+a {
+  color: firebrick;
+}
+
+code { 
+  background-color: seashell;
+}
+
+#container {
+  margin: 2em;
+}
+
+#sidebar {
+  width: 200px;
+  float: left;
+  padding-top: 1em;
+}
+
+#sidebar ul  {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+  margin:0;
+}
+
+#sidebar li {
+  list-style-position: outside;
+  margin-bottom: 0.2em;
+}
+#sidebar a
+, header
+, footer
+, header a
+, footer a {
+  color: green;
+  text-decoration: none;
+}
+#main {
+  padding: 2em;
+  overflow: auto;
+  min-height: 20em;
+  background-color: white;
+}
+
+#main h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+header {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header
+{
+  padding-left: 1em;
+}
+footer {
+  text-align: right;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+@media print {
+#sidebar {
+  display: none;
+}
+#main
+, header
+, footer{
+  margin: 0;
+  padding: 0;
+  
+}
